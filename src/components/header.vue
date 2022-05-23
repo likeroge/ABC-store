@@ -4,7 +4,7 @@
       <div class="text-2xl tracking-widest">
         <div class="flex flex-col justify-between h-full">
           <img
-            class="w-32 bg-green-500 rounded"
+            class="sm:w-28 md:w-32 bg-green-500 rounded"
             src="../assets/images/logo.png"
             alt=""
           />
