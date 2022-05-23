@@ -1,7 +1,7 @@
 <template>
   <div class="h-60 bg-white shadow-2xl rounded">
     <img
-      :src="product.image"
+      :src="'../src/assets/' + product.image"
       alt="IMG"
       :style="{
         border: product.selected_color

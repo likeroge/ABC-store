@@ -6,7 +6,7 @@
       // ... other libs
       "es2019"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
     }

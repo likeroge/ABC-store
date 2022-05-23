@@ -9,7 +9,7 @@
             : '3px solid gray',
         }"
       >
-        <img :src="product.image" alt="IMG" srcset="" />
+        <img :src="'../src/assets/' + product.image" alt="IMG" srcset="" />
       </div>
       <div class="ml-4 w-full">
         <p class="">{{ product.title }}</p>
