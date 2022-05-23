@@ -3,7 +3,11 @@
     <div class="flex items-center bg-white justify-between px-5 h-2/6">
       <div class="text-2xl tracking-widest">
         <div class="flex flex-col justify-between h-full">
-          <div><span class="text-green-500">A</span>BC</div>
+          <img
+            class="w-32 bg-green-500 rounded"
+            src="../assets/images/logo.png"
+            alt=""
+          />
         </div>
       </div>
 
@@ -14,7 +18,7 @@
 
         <fa
           v-if="cart.products.length === 0"
-          icon="cart-shopping"
+          icon="cart-arrow-down"
           class="h-6 text-gray-500 cursor-pointer"
           @click="$router.push('/cart')"
         />
