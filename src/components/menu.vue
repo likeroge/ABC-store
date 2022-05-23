@@ -38,6 +38,5 @@ import { mockBrands } from "../stores/mock/mockBrands";
 
 const appState = useAppState();
 const products = useProductsStore();
-const cartStore = useCartStore();
 </script>
 <style scoped></style>

@@ -18,10 +18,11 @@
       <div class="h-3/6">
         <fa
           v-if="cart.products.length === 0"
-          icon="cart-shopping"
+          icon="cart-arrow-down"
           class="h-full text-gray-500"
           @click="$router.push('/cart')"
         />
+
         <div v-else class="flex h-full">
           <p class="text-xl">{{ cart.products.length }}</p>
           <fa
@@ -35,7 +36,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import router from "@/router";
 import { useAppState } from "@/stores/app-state";
 import { useCartStore } from "@/stores/cart";
 

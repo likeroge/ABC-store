@@ -48,15 +48,6 @@
         <p class="text-green-500 uppercase sm:text-sm md:text-xl">
           Лучшие товары на диком западе
         </p>
-        <!-- <input
-          v-if="$route.path === '/'"
-          placeholder="Введите название товара"
-          type="text"
-          name=""
-          id=""
-          class="sm:w-full md:w-1/2 rounded p-5 border-2"
-        /> -->
-        <!-- <div v-else class="w-full sm:bg-slate-300"></div> -->
       </div>
     </div>
   </div>
@@ -66,7 +57,6 @@ import { useAppState } from "@/stores/app-state";
 import { useCartStore } from "@/stores/cart";
 import { useProductsStore } from "@/stores/products";
 
-const products = useProductsStore();
 const cart = useCartStore();
 const appState = useAppState();
 </script>
