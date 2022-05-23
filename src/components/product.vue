@@ -46,14 +46,15 @@
     <div class="px-2 flex justify-center">
       <button
         @click="store.addToCart(product)"
-        class="h-full bg-green-500 px-4 rounded active:bg-green-800"
-        :style="
-          product.colors &&
-          !product.selected_color && {
-            pointerEvents: 'none',
-            background: 'gray',
-          }
-        "
+        class="h-full bg-green-500 px-4 rounded active:scale-y-[90%] text-white"
+        :style="{
+          pointerEvents:
+            product.colors && !product.selected_color ? 'none' : 'auto',
+          background:
+            product.colors && !product.selected_color
+              ? 'gray'
+              : 'rgb(94,194,105)',
+        }"
       >
         добавить
       </button>
