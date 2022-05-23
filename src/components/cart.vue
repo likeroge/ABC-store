@@ -1,7 +1,9 @@
 <template>
   <Modal />
 
-  <div class="sm:pt-[30%] sm:px-4 md:pt-[20%] md:px-48 h-[90%] bg-gray-100">
+  <div
+    class="sm:pt-[30%] sm:px-4 md:pt-[20%] lg:pt-[10%] md:px-48 h-[90%] bg-gray-100"
+  >
     <div class="flex justify-between items-center mb-2">
       <h1 class="text-xl">Корзина</h1>
       <p>{{ cartStore.products.length }} {{ correctItemsWordInRus }}</p>

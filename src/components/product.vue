@@ -1,6 +1,7 @@
 <template>
-  <div class="h-60 bg-white shadow-2xl rounded">
+  <div class="h-60 md:w-36 sm:w-32 bg-white shadow-2xl rounded">
     <img
+      class="w-full"
       :src="'../src/assets/' + product.image"
       alt="IMG"
       :style="{
@@ -12,7 +13,6 @@
     />
     <div class="h-[10%] mt-1">
       <div v-if="props.product.colors" class="flex justify-around text-sm">
-        <!-- props.product.colors -->
         <div
           v-for="(color, idx) in ['blue', 'green', 'red']"
           class="w-full flex justify-center"
